@@ -13,26 +13,26 @@ window.addEventListener("scroll", function() {
     }
 });
 
-// Function for Search Button
-document.getElementById("search-btn").addEventListener("click", () => {
-    const query = document.getElementById("search-input").value.toLowerCase();
-    const sections = document.querySelectorAll("section");
-    sections.forEach(section => {
-        if (section.textContent.toLowerCase().includes(query)) {
-            section.style.backgroundColor = "yellow";
-            section.scrollIntoView({ behavior: "smooth" });
-        } else {
-            section.style.backgroundColor = "transparent";
-        }
-    });
-});
+// // Function for Search Button
+// document.getElementById("search-btn").addEventListener("click", () => {
+//     const query = document.getElementById("search-input").value.toLowerCase();
+//     const sections = document.querySelectorAll("section");
+//     sections.forEach(section => {
+//         if (section.textContent.toLowerCase().includes(query)) {
+//             section.style.backgroundColor = "yellow";
+//             section.scrollIntoView({ behavior: "smooth" });
+//         } else {
+//             section.style.backgroundColor = "transparent";
+//         }
+//     });
+// });
 
 
 let menu = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
 
 menu.onclick = () => {
-    menu.classList.toggle("bx-x");
+    menu.classList.toggle("bx-menu");
     navlist.classList.toggle("open");
 };
 
