@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Kampus</title>
+     <link rel="icon" type="png" href="foto/bsi.png">
+    <link rel="stylesheet" href="galeri.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Galeri Kampus</h1>
+    </header>
+
+    <!-- FILTER -->
+    <div class="filter-buttons">
+        <button onclick="filterGallery('all')">Semua</button>
+        <button onclick="filterGallery('gedung')">Gedung</button>
+        <button onclick="filterGallery('kegiatan')">Kegiatan</button>
+        <button onclick="filterGallery('organisasi')">Organisasi</button>
+    </div>
+
+    <!-- GALLERY -->
+    <section class="gallery-container" id="gallery">
+        <div class="gallery-item gedung"><a href="#img1"><img src="foto/cikarang.png" alt="Gedung Cikarang"></a><div class="text">Gedung Cikarang</div></div>
+        <div class="gallery-item gedung"><a href="#img2"><img src="foto/cilebut.png" alt="Gedung Cilebut"></a><div class="text">Gedung Cilebut</div></div>
+        <div class="gallery-item gedung"><a href="#img3"><img src="foto/dws.png" alt="Gedung Dewi Sartika"></a><div class="text">Gedung Dewi Sartika</div></div>
+        <div class="gallery-item gedung"><a href="#img4"><img src="foto/kalimalang.png" alt="Gedung Kalimalang"></a><div class="text">Gedung Kalimalang</div></div>
+        <div class="gallery-item gedung"><a href="#img5"><img src="foto/karawang.png" alt="Gedung Karawang"></a><div class="text">Gedung Karawang</div></div>
+        <div class="gallery-item gedung"><a href="#img6"><img src="foto/pemuda.png" alt="Gedung Pemuda"></a><div class="text">Gedung Pemuda</div></div>
+        <div class="gallery-item gedung"><a href="#img7"><img src="foto/bsibsd.png" alt="Gedung BSD"></a><div class="text">Gedung BSD</div></div>
+        <div class="gallery-item gedung"><a href="#img8"><img src="foto/bsitgr.png" alt="Gedung Tangerang"></a><div class="text">Gedung Tangerang</div></div>
+
+        <div class="gallery-item kegiatan"><a href="#img7"><img src="foto/ldk.jpeg" alt="Latihan Dasar Kepemimpinan"></a><div class="text">LDK</div></div>
+        <div class="gallery-item kegiatan"><a href="#img8"><img src="foto/masker.jpeg" alt="Pembagian masker"></a><div class="text">Pembagian Masker</div></div>
+        <div class="gallery-item kegiatan"><a href="#img9"><img src="foto/sembako.jpeg" alt="Pembagian Sembako"></a><div class="text">Pembagian Sembako</div></div>
+        <div class="gallery-item kegiatan"><a href="#img10"><img src="foto/seminar.jpg" alt="Seminar 2019"></a><div class="text">Seminar 2019</div></div>
+        <div class="gallery-item kegiatan"><a href="#img11"><img src="foto/silat.jpg" alt="kejuaraan Silat"></a><div class="text">Kejuaraan Silat</div></div>
+        <div class="gallery-item kegiatan"><a href="#img12"><img src="foto/siskom.jpg" alt="Kejuaraan Futsal"></a><div class="text">Kejuaraan Futsal</div></div>
+        <div class="gallery-item kegiatan"><a href="#img13"><img src="foto/paduan.jpg" alt="Paduan Suara"></a><div class="text">Paduan Suara</div></div>
+        <div class="gallery-item kegiatan"><a href="#img14"><img src="foto/Lintas.jpg" alt="Kejuaraan Lintas Alam"></a><div class="text">Kejuaraan Lintas Alam</div></div>
+
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/organisasi.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Workshop Man</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/ORga.jpeg" alt="Organisasi Mahasiswa"></a><div class="text">Seleksi Dan Coaching</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/j.png" alt="Organisasi Mahasiswa"></a><div class="text">Sertijab</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/h.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Pelantikan</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/m.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Ormik Mahasiswa</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/y.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Calandra</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/teknik.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Pengabdian Masyarakat</div></div>
+        <div class="gallery-item organisasi"><a href="#img5"><img src="foto/save.jpg" alt="Organisasi Mahasiswa"></a><div class="text">Donor Darah</div></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2023 by Fachri Putra Al Fatih All Rights Reserved.
+    </footer>
+
+    <script src="galeri.js"></script>
+</body>
+
+</html>
