@@ -37,8 +37,8 @@ menu.onclick = () => {
 };
 
 window.onscroll = () => {
-    menu.classList.remove("bx-x");
-    navlist.classList.remove("open");
+    menu.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
 };
 
 // Function to scroll to the top
